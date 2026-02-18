@@ -12,11 +12,9 @@ export function Footer() {
           {/* About Section */}
           <div className="space-y-3">
             <h3 className="font-display text-lg font-bold gradient-text">
-              Ujjwal shukla
+              Manmeet Singh
             </h3>
-            <p className="text-sm text-muted-foreground">
-              
-            </p>
+            <p className="text-sm text-muted-foreground"></p>
           </div>
 
           {/* Quick Links */}

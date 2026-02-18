@@ -5,11 +5,11 @@ import Link from "next/link";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
 import { Button } from "@/components/ui/button";
 import { LazyStarsBackground } from "@/components/3d/lazy-stars";
-import { 
-  Typewriter, 
+import {
+  Typewriter,
   GradientText,
   MagneticButton,
-  FloatingParticles
+  FloatingParticles,
 } from "@/components/animations";
 
 export function Hero() {
@@ -17,13 +17,13 @@ export function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* 3D Background */}
       <LazyStarsBackground />
-      
+
       {/* Floating Particles */}
       <FloatingParticles />
-      
+
       {/* Background gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-lavender/10 via-transparent to-teal/10" />
-      
+
       {/* Content */}
       <div className="container mx-auto px-4 py-20 relative z-10">
         <motion.div
@@ -46,14 +46,12 @@ export function Hero() {
             variants={ANIMATION_VARIANTS.scaleIn}
             transition={{ duration: 0.6, delay: 0.3 }}
             className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
-            style={{ 
+            style={{
               background: "none",
-              WebkitTextFillColor: "unset"
+              WebkitTextFillColor: "unset",
             }}
           >
-            <GradientText className="font-display">
-              Ujjwal shukla
-            </GradientText>
+            <GradientText className="font-display">Manmeet Singh</GradientText>
           </motion.h1>
 
           {/* Tagline */}
@@ -62,14 +60,13 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl md:text-2xl text-muted-foreground mb-8"
           >
-            
             <span className="block mt-2">
-              <Typewriter 
+              <Typewriter
                 words={[
                   "Frontend Developer",
                   "Cyber security enthusiast",
                   "Problem Solver",
-                  "Tech Innovator"
+                  "Tech Innovator",
                 ]}
                 className="text-primary font-semibold"
               />
@@ -83,15 +80,17 @@ export function Hero() {
             className="flex flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0"
           >
             <MagneticButton>
-              <Button asChild size="lg" className="text-sm sm:text-base px-4 sm:px-8">
+              <Button
+                asChild
+                size="lg"
+                className="text-sm sm:text-base px-4 sm:px-8"
+              >
                 <Link href="/projects">View Projects</Link>
               </Button>
             </MagneticButton>
-            
           </motion.div>
         </motion.div>
       </div>
     </section>
   );
 }
-      

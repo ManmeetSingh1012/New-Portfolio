@@ -4,16 +4,12 @@ import { motion } from "framer-motion";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
 import { educationData } from "@/data/achievements";
 import { GraduationCap, MapPin, Calendar } from "lucide-react";
-import { 
-  ScrollReveal, 
-  GradientText
-} from "@/components/animations";
+import { ScrollReveal, GradientText } from "@/components/animations";
 
 export function About() {
   return (
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
-
         {/* Section Header */}
         <ScrollReveal delay={0.1}>
           <motion.div
@@ -27,8 +23,9 @@ export function About() {
               About <GradientText>Me</GradientText>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Passionate about building innovative solutions at the intersection of
-              cloud computing, full-stack development, and emerging technologies.
+              Passionate about building innovative solutions at the intersection
+              of cloud computing, full-stack development, and emerging
+              technologies.
             </p>
           </motion.div>
         </ScrollReveal>
@@ -43,49 +40,51 @@ export function About() {
           className="mb-16"
         >
           <div className="grid md:grid-cols-2 gap-12 items-start">
-
             {/* LEFT — About Text */}
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
-                Hi! I&apos;m Ujjwal Shukla, currently pursuing my B.Tech in Computer Science Engineering
-                at Lloyd Institute of Engineering and Technology, Delhi. With a strong interest in
-                technology, community building, and full-stack development, I love creating impactful
-                solutions and digital experiences that make a real difference.
+                Hi! I&apos;m Manmeet Singh, currently pursuing my B.Tech in
+                Computer Science Engineering at Lloyd Institute of Engineering
+                and Technology, Delhi. With a strong interest in technology,
+                community building, and full-stack development, I love creating
+                impactful solutions and digital experiences that make a real
+                difference.
               </p>
 
               <p>
-                I completed an App Designing Internship at MakeIntern, where I designed their
-                website UI, focusing on user experience, layout structuring, and visual consistency.
-                This experience strengthened my design thinking and practical implementation skills.
-                I&apos;m passionate about leveraging technology and design to solve real-world problems.
+                I completed an App Designing Internship at MakeIntern, where I
+                designed their website UI, focusing on user experience, layout
+                structuring, and visual consistency. This experience
+                strengthened my design thinking and practical implementation
+                skills. I&apos;m passionate about leveraging technology and
+                design to solve real-world problems.
               </p>
 
               <p>
-                As the Co-founder of Coders Circle, a tech community with 1500+ developers and students,
-                I&apos;ve been building a strong coding culture through events, mentorship, and collaborative
-                learning, helping students grow individually and as a community.
+                As the Co-founder of Coders Circle, a tech community with 1500+
+                developers and students, I&apos;ve been building a strong coding
+                culture through events, mentorship, and collaborative learning,
+                helping students grow individually and as a community.
               </p>
             </div>
 
             {/* RIGHT — FLOATING PHOTO + CARD */}
             <div className="relative flex flex-col items-center">
-
               {/* FLOATING IMAGE */}
               <div className="absolute -top-24">
                 <div className="relative w-75 h-75 rounded-full p-[4px] bg-gradient-to-br from-primary via-purple-500 to-blue-500 shadow-2xl">
                   <div className="rounded-full overflow-hidden w-full h-full">
-                    
                     <img
                       src="/me/me.png"
-                      alt="Ujjwal Shukla"
+                      alt="Manmeet Singh"
                       className="object-cover w-full h-full"
                     />
-                    
                   </div>
                 </div>
-
               </div>
-              <br /><br /><br />
+              <br />
+              <br />
+              <br />
 
               {/* EDUCATION CARD — moved down for spacing */}
               <div className="pt-40 w-full space-y-4">
@@ -105,7 +104,9 @@ export function About() {
                       </div>
                       <div className="flex-1">
                         <h3 className="font-semibold text-lg">{edu.degree}</h3>
-                        <p className="text-primary font-medium">{edu.institution}</p>
+                        <p className="text-primary font-medium">
+                          {edu.institution}
+                        </p>
                         <div className="flex flex-wrap gap-4 mt-2 text-sm text-muted-foreground">
                           <span className="flex items-center gap-1">
                             <Calendar className="h-3 w-3" />
@@ -121,11 +122,9 @@ export function About() {
                   </motion.div>
                 ))}
               </div>
-
             </div>
           </div>
         </motion.div>
-
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-// Projects data from Ujjwal's portfolio
+// Projects data from Manmeet Singh's portfolio
 
 export interface Project {
   id: string;
@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "Supabase",
       "REST APIs",
       "Prompt Engineering",
-      "OpenAI (LLM-powered Roadmaps)"
+      "OpenAI (LLM-powered Roadmaps)",
     ],
     features: [
       "Goal-based roadmap generation for different tech stacks (web, AI, DSA, etc.)",
@@ -39,12 +39,12 @@ export const projects: Project[] = [
       "Clean, modern UI using shadcn/ui and Aceternity components",
       "Forms and inputs to capture user background and preferences",
       "Potential integration with Supabase for auth and persistence",
-      "Responsive layout optimized for both desktop and mobile"
+      "Responsive layout optimized for both desktop and mobile",
     ],
     image: "/images/projects/syncverse/syncverse.webp",
     demoUrl: "https://sync-verse01.vercel.app",
-    githubUrl: "https://github.com/techieujjwal/syncVerse01",
-    category: "ai"
+    githubUrl: "https://github.com/ManmeetSingh1012/Stable-Billing",
+    category: "ai",
   },
   {
     id: "portfolio-v1",
@@ -52,14 +52,14 @@ export const projects: Project[] = [
     description:
       "A from-scratch personal portfolio website built with only HTML, CSS, and JavaScript.",
     longDescription:
-      "This is Ujjwal Shukla’s first personal portfolio website, built entirely with core web technologies and no frontend frameworks. The site showcases projects, skills, and journey as a computer science student, with a focus on smooth scrolling, theme toggling, and subtle animations. It includes a working contact form powered by Formspree, dual-theme support (light/dark), and interactive elements like a pixel grid that lights up on hover, delivering a polished but framework-free portfolio experience.",
+      "This is Manmeet Singh first personal portfolio website, built entirely with core web technologies and no frontend frameworks. The site showcases projects, skills, and journey as a computer science student, with a focus on smooth scrolling, theme toggling, and subtle animations. It includes a working contact form powered by Formspree, dual-theme support (light/dark), and interactive elements like a pixel grid that lights up on hover, delivering a polished but framework-free portfolio experience.",
     technologies: [
       "HTML5",
       "CSS3",
       "JavaScript (ES6)",
       "CSS Variables",
       "Font Awesome",
-      "Formspree"
+      "Formspree",
     ],
     features: [
       "Dual-theme (light & dark) with preference saved in local storage",
@@ -67,12 +67,12 @@ export const projects: Project[] = [
       "Smooth scroll-based animations and section transitions",
       "Typing effect in the hero section for dynamic introduction",
       "Functional contact form integrated via Formspree",
-      "Interactive pixel grid and clean single-page navigation"
+      "Interactive pixel grid and clean single-page navigation",
     ],
     image: "/images/projects/portfolio-v1/portfolio4.webp",
     demoUrl: "https://techieujjwal.github.io/portfolio/",
-    githubUrl: "https://github.com/techieujjwal/portfolio",
-    category: "web"
+    githubUrl: "https://github.com/ManmeetSingh1012/New-Portfolio",
+    category: "web",
   },
   {
     id: "community-dashboard",
@@ -91,7 +91,7 @@ export const projects: Project[] = [
       "Supabase",
       "Supabase Realtime",
       "Chart.js / Recharts",
-      "REST APIs"
+      "REST APIs",
     ],
     features: [
       "Dashboard overview with key community KPIs (members, activity, growth)",
@@ -99,12 +99,12 @@ export const projects: Project[] = [
       "Leaderboards highlighting most active and top-contributing members",
       "Announcements panel for hackathons, events, and important updates",
       "Real-time updates using Supabase Realtime without manual refresh",
-      "Scalable architecture suitable for clubs, communities, and online forums"
+      "Scalable architecture suitable for clubs, communities, and online forums",
     ],
     image: "/images/projects/community-dashboard/community.webp",
-     demoUrl: "https://community-dashboard-beige.vercel.app/",
-    githubUrl: "https://github.com/techieujjwal/community-dashboard",
-    category: "web"
+    demoUrl: "https://community-dashboard-beige.vercel.app/",
+    githubUrl: "https://github.com/ManmeetSingh1012/Frontend-Hotel_Managment",
+    category: "web",
   },
   {
     id: "student-result-analyzer",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
       "Python",
       "pandas",
       "matplotlib",
-      "CSV (File-based Storage)"
+      "CSV (File-based Storage)",
     ],
     features: [
       "Add and manage student mark records via a simple interface",
@@ -125,10 +125,10 @@ export const projects: Project[] = [
       "Analyze averages, toppers, and lowest scorers per subject",
       "Plot subject-wise marks using bar charts with matplotlib",
       "Search functionality by roll number",
-      "Extendable base for future features like GUI or PDF reports"
+      "Extendable base for future features like GUI or PDF reports",
     ],
-    image:"/images/student-result-analyzer/result.webp",
-    githubUrl: "https://github.com/techieujjwal/Student-result-analyzer",
-    category: "ai"
-  }
+    image: "/images/student-result-analyzer/result.webp",
+    githubUrl: "https://github.com/ManmeetSingh1012/UPSCprepKit",
+    category: "ai",
+  },
 ];

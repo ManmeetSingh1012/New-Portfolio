@@ -1,4 +1,4 @@
-// Skills data categorized from ujjwalla's resume
+// Skills data categorized from Manmeet Singh's resume
 
 export interface Skill {
   name: string;
@@ -22,18 +22,19 @@ export const skillsData: SkillCategory[] = [
       { name: "python", level: 88 },
       { name: "Java", level: 85 },
       { name: "C++", level: 80 },
-      { name: "SQL", level: 85 }
-    ]
+      { name: "SQL", level: 85 },
+    ],
   },
   {
     title: "Frontend Development",
     icon: "🎨",
-    skills: [      { name: "React.js", level: 90 },
+    skills: [
+      { name: "React.js", level: 90 },
       { name: "Next.js", level: 85 },
       { name: "Tailwind CSS", level: 88 },
       { name: "Three.js", level: 75 },
-      { name: "React.js", level: 80 }
-    ]
+      { name: "React.js", level: 80 },
+    ],
   },
   {
     title: "Backend & Databases",
@@ -41,9 +42,8 @@ export const skillsData: SkillCategory[] = [
     skills: [
       { name: "SupaBase", level: 74 },
       { name: "MYSQL", level: 85 },
-     
-      { name: "Firebase", level: 90 }
-    ]
+
+      { name: "Firebase", level: 90 },
+    ],
   },
-  
 ];

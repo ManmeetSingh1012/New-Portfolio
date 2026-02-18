@@ -10,7 +10,7 @@ export const generateMetadata = (): Metadata => {
     },
     description: SITE_CONFIG.description,
     keywords: [
-      "Ujjwal shukla",
+      "Manmeet Singh",
       "Portfolio",
       "Frontend Developer",
       "Tech enthutiast",
@@ -52,7 +52,7 @@ export const generateMetadata = (): Metadata => {
       title: SITE_CONFIG.name,
       description: SITE_CONFIG.description,
       images: [SITE_CONFIG.ogImage],
-      creator: "@ujjwalShukla",
+      creator: "@manmeetsingh",
     },
     robots: {
       index: true,

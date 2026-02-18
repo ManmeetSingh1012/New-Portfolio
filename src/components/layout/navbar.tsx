@@ -37,8 +37,7 @@ export function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () =>
-      window.removeEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   if (!mounted) return null;
@@ -56,7 +55,6 @@ export function Navbar() {
           )}
         >
           <div className="flex items-center justify-between">
-
             {/* Logo */}
             <Link
               href="/"
@@ -64,7 +62,7 @@ export function Navbar() {
               className="font-display text-xl font-bold transition-all hover:opacity-80"
             >
               <span className="gradient-text tracking-tight">
-                Ujjwal shukla
+                Manmeet Singh
               </span>
             </Link>
 
@@ -146,19 +144,14 @@ export function Navbar() {
                         onClick={() => setOpen(false)}
                         className="font-display text-2xl font-bold"
                       >
-                        <span className="gradient-text">
-                          Ujjwal shukla
-                        </span>
+                        <span className="gradient-text">Manmeet Singh</span>
                       </Link>
                     </div>
 
                     {/* Nav links */}
                     <div className="flex-1 px-6 py-6 flex flex-col gap-2">
                       {NAV_ITEMS.map((item) => (
-                        <motion.div
-                          whileTap={{ scale: 0.97 }}
-                          key={item.href}
-                        >
+                        <motion.div whileTap={{ scale: 0.97 }} key={item.href}>
                           <Link
                             href={item.href}
                             onClick={() => setOpen(false)}
@@ -185,7 +178,6 @@ export function Navbar() {
                         </Button>
                       </a>
                     </div>
-
                   </div>
                 </SheetContent>
               </Sheet>
