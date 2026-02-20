@@ -1,29 +1,13 @@
-name: Deploy
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Deploy to VPS
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: 72.60.218.93
-          username: dev
-          key: ${{ secrets.SSH_KEY }}
-          port: 22
-          debug: true
-          script: |
-            cd /var/www/portfolio/New-Portfolio
-            git pull origin main
-            npm install
-            npm run build
-            pm2 restart all
+- name: Deploy to VPS
+  uses: appleboy/ssh-action@v1.0.3
+  with:
+    host: 72.60.218.93
+    username: dev
+    password: ${{ secrets.SSH_PASSWORD }}
+    port: 22
+    script: |
+      cd /var/www/portfolio/New-Portfolio
+      git pull origin main
+      npm install
+      npm run build
+      pm2 restart all
