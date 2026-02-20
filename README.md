@@ -1,4 +1,4 @@
-# Ujjwal's Portfolio Website
+# manmeet's Portfolio Website
 
 A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS v4, designed to showcase my journey, projects, community work, and technical profile.
 
@@ -8,15 +8,18 @@ All phases completed successfully.
 The portfolio is fully optimized for performance, SEO, and real-world usage.
 
 🚀 Quick Start
+
 # Install dependencies
+
 npm install
 
 # Run development server
+
 npm run dev
 
 # Build for production
-npm run build
 
+npm run build
 
 Visit:
 👉 http://localhost:3000
@@ -34,7 +37,7 @@ Light/Dark mode toggle (next-themes)
 
 Hero Section
 
-Gradient heading with my name: Ujjwal Shukla
+Gradient heading with my name: Manmeet Singh
 
 AI / Tech themed design aesthetic
 
@@ -179,15 +182,15 @@ Inspired by modern startup portfolios + developer SaaS UI
 
 📁 Project Structure
 src/
-├── app/              # Next.js app directory
-├── components/       # React components
-│   ├── ui/          # Reusable UI components
-│   ├── layout/      # Navbar, Footer, Layout
-│   ├── sections/    # Main page sections
-│   └── 3d/          # Three.js visual components
-├── data/            # Static content (projects, skills, experience)
-├── lib/             # Utilities and constants
-└── types/           # TypeScript interfaces
+├── app/ # Next.js app directory
+├── components/ # React components
+│ ├── ui/ # Reusable UI components
+│ ├── layout/ # Navbar, Footer, Layout
+│ ├── sections/ # Main page sections
+│ └── 3d/ # Three.js visual components
+├── data/ # Static content (projects, skills, experience)
+├── lib/ # Utilities and constants
+└── types/ # TypeScript interfaces
 
 🌍 Live Projects Integrated
 
@@ -201,4 +204,4 @@ Personal Portfolio V1
 
 📝 License
 
-© 2025 Ujjwal Shukla. All rights reserved."# portfolio2.0" 
+© 2026 manmeet Shukla. All rights reserved."# portfolio2.0"

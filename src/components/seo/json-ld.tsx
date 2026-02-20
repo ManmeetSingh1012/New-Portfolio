@@ -6,18 +6,15 @@ export function JsonLd() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
-    name: "Ujjwal shukla",
+    name: "Manmeet Singh",
     alternateName: "NK",
     url: SITE_CONFIG.url,
     email: SITE_CONFIG.links.email,
     telephone: SITE_CONFIG.links.phone,
     jobTitle: "Computer Science Graduate Student",
     description: SITE_CONFIG.description,
-    sameAs: [
-      SITE_CONFIG.links.github,
-      SITE_CONFIG.links.linkedin,
-    ],
-    alumniOf: educationData.map(edu => ({
+    sameAs: [SITE_CONFIG.links.github, SITE_CONFIG.links.linkedin],
+    alumniOf: educationData.map((edu) => ({
       "@type": "EducationalOrganization",
       name: edu.institution,
       address: {
@@ -26,7 +23,7 @@ export function JsonLd() {
         addressCountry: edu.location.split(", ")[1],
       },
     })),
-    worksFor: experienceData.map(exp => ({
+    worksFor: experienceData.map((exp) => ({
       "@type": "Organization",
       name: exp.company,
       address: {
@@ -46,7 +43,7 @@ export function JsonLd() {
       "Python",
       "TypeScript",
     ],
-    memberOf: achievementsData.map(achievement => ({
+    memberOf: achievementsData.map((achievement) => ({
       "@type": "Organization",
       name: achievement.organization,
       description: achievement.description,
