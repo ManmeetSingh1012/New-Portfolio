@@ -12,125 +12,59 @@ export type Experience = {
 
 export const experienceData: Experience[] = [
   {
-    id: "google-student-ambassador",
-    company: "Google",
-    role: "Student Ambassador",
-    duration: "Dec 2025 - Present",
-    location: "Delhi, India · Remote",
+    id: "equasar-software-developer",
+    company: "Equasar",
+    role: "Software Developer",
+    duration: "Dec 2024 - Present",
+    location: "Ludhiana, Punjab, India",
     description:
-      "Working as a Student Ambassador helping students explore AI tools, providing technical guidance, and building student-focused learning initiatives.",
+      "Building backend services and core product modules for a multi-domain short-video platform, with ownership across monetization, wallet systems, video delivery, and third-party integrations.",
     achievements: [
-      "Hosted AI workshops and student learning sessions",
-      "Guided students in using Gemini and Google AI tools",
-      "Built strong networking and mentorship environment",
-      "Enhanced communication and leadership capabilities"
+      "Built coin-based monetization with Stripe and Apple Pay, processing 1,100+ transactions during rollout without production balance mismatches",
+      "Implemented a concurrent digital wallet using SQL transactions and row-level locking to eliminate race conditions found during pre-launch load testing",
+      "Built an AWS S3, CloudFront, and HLS video delivery pipeline that reduced average initial mobile load time from 3.5s to 2.1s",
+      "Solved browser autoplay restrictions by decoupling audio and video streams, increasing first-play success rate from about 55% to over 90%",
+      "Implemented an engagement-based feed ranking system using views, likes, and watch time to improve retention over a chronological baseline",
+      "Integrated Square POS, DoorDash, and Uber APIs for an internal food-delivery module with menu customization and automated receipt printing",
     ],
     technologies: [
-      "Public Speaking",
-      "Community Engagement",
-      "AI Tools",
-      "Leadership"
+      "Node.js",
+      "TypeScript",
+      "SQL Transactions",
+      "Stripe",
+      "Apple Pay",
+      "AWS S3",
+      "CloudFront",
+      "HLS",
     ],
-    type: "part-time"
+    type: "full-time",
   },
-
   {
-    id: "ibm-ai-intern",
-    company: "IBM",
-    role: "Artificial Intelligence Intern",
-    duration: "Aug 2025 - Sep 2025",
-    location: "Delhi, India · Remote",
+    id: "01-synergy-software-developer",
+    company: "01 Synergy",
+    role: "Software Developer",
+    duration: "Jun 2024 - Nov 2024",
+    location: "Ludhiana, Punjab, India",
     description:
-      "Completed a 6-week Virtual Internship in Artificial Intelligence under IBM's Future Skills Program (FSP), focused on AI fundamentals and real-world applications.",
+      "Worked across backend and frontend systems for a real-time consultation platform, focusing on messaging, video, analytics, payments, and operational automation.",
     achievements: [
-      "Gained hands-on experience in Artificial Intelligence fundamentals",
-      "Worked on Machine Learning workflows and data preprocessing",
-      "Applied AI concepts to solve real-world problem statements",
-      "Built strong foundations in AI and analytics"
+      "Developed a real-time consultation platform using WebSockets and Video SDK, supporting up to 200 concurrent users with sub-200ms message delivery in load tests",
+      "Built an admin dashboard across 10+ key metrics and integrated Razorpay payment processing with automated reconciliation over 1,000+ MySQL transactions",
+      "Automated fake social account detection and reporting with a Python workflow integrated with external APIs, reducing manual case handling from around 30 minutes to under 10 minutes",
+      "Contributed across a TypeScript codebase using Prisma, Mongoose, Node.js, MySQL, AWS S3, and Redux for both backend services and frontend state management",
     ],
     technologies: [
-      "Artificial Intelligence",
-      "Machine Learning",
-      "Data Preprocessing",
-      "Data Analytics"
+      "Node.js",
+      "TypeScript",
+      "WebSockets",
+      "Video SDK",
+      "MySQL",
+      "Prisma",
+      "Mongoose",
+      "AWS S3",
+      "Redux",
+      "Python",
     ],
-    type: "internship"
+    type: "full-time",
   },
-  {
-    id: "makeintern-app-intern",
-    company: "MakeIntern",
-    role: "App Development Intern",
-    duration: "Jul 2025",
-    location: "West Delhi, Delhi, India · Remote",
-    description:
-      "Worked as an App Development Intern focusing on UI/UX design and mobile application user flow for real-world projects.",
-    achievements: [
-      "Designed and improved UI/UX for mobile application prototypes",
-      "Worked on app structure and user flow under live project environment",
-      "Collaborated with SkillUpgrad, MakeIntern, and NSDC on design tasks",
-      "Delivered a functional prototype within a one-month internship program"
-    ],
-    technologies: [
-      "UI/UX Design",
-      "Flutter",
-      "App Prototyping",
-      "Mobile App Design",
-      "Figma"
-    ],
-    type: "internship"
-  },
-
-  {
-    id: "coders-circle-cofounder",
-    company: "Coders Circle",
-    role: "Co-Founder",
-    duration: "Aug 2025 - Present",
-    location: "Greater Noida, India · Remote",
-    description:
-      "Co-founded and actively managing Coders Circle, a fast-growing student-led tech community focused on improving technical skills and collaboration.",
-    achievements: [
-      "Scaled the community to 1400+ students within the first month",
-      "Implemented effective community engagement strategies and learning initiatives",
-      "Managed project curation and technical collaborations",
-      "Built a strong peer-learning environment for developers and tech enthusiasts"
-    ],
-    technologies: ["Community Building", "Leadership", "Team Management", "Growth Strategy"],
-    type: "full-time"
-  },
-
-  {
-    id: "letsupgrade-student-ambassador",
-    company: "LetsUpgrade",
-    role: "Student Ambassador",
-    duration: "Sep 2025 - Nov 2025",
-    location: "Delhi, India · Remote",
-    description:
-      "Served as a Student Ambassador, promoting tech programs and workshops to enhance campus tech awareness and participation.",
-    achievements: [
-      "Promoted workshops, webinars, and tech events among students",
-      "Increased awareness about LetsUpgrade programs on campus",
-      "Collaborated with students and faculty to strengthen campus tech community",
-      "Improved leadership, communication, and networking skills"
-    ],
-    technologies: ["Communication", "Leadership", "Marketing Outreach", "Community Engagement"],
-    type: "internship"
-  },
-
-  {
-    id: "devsphere-event-manager",
-    company: "DevSphereIndia",
-    role: "Event Manager",
-    duration: "Sep 2025 - Present",
-    location: "Delhi, India · Hybrid",
-    description:
-      "Working as an Event Manager intern, planning and managing technical events, hackathons, and student-focused workshops to enhance engagement and participation.",
-    achievements: [
-      "Planned and managed multiple technical events, hackathons, and workshops for student communities",
-      "Coordinated with speakers, mentors, and participants to ensure smooth execution",
-      "Collaborated with the event team to improve outreach and participation strategies",
-      "Built hands-on experience in hybrid (online + offline) community management"
-    ],
-    technologies: ["Event Management", "Stakeholder Coordination", "Community Building", "Public Speaking"],
-    type: "internship"
-  }
 ];

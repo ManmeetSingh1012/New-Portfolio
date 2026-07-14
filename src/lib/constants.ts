@@ -4,12 +4,12 @@ export const SITE_CONFIG = {
   name: "Manmeet Singh",
   description:
     "B.Tech Computer Science Engineering Student at Lloyd Institute of Engineering & Technology | Full-stack Developer | Community Builder | AI & Web Enthusiast",
-  url: "https://ujjwalshukla.com",
+  url: "https://portfolio.manmeetsingh.dev",
   ogImage: "/images/ujjwal/og-image.png",
   links: {
-    email: "ujjwalshukla291@gmail.com",
+    email: "manmeetsinghnss@gmail.com",
     github: "https://github.com/ManmeetSingh1012",
-    linkedin: "https://linkedin.com/in/ujjwal-shukla88821",
+    linkedin: "https://www.linkedin.com/in/manmeet-singh-749876205/",
     phone: "+91 9876130521",
   },
 };

@@ -2,15 +2,16 @@
 
 import { motion } from "framer-motion";
 import { ANIMATION_VARIANTS } from "@/lib/constants";
-import { educationData } from "@/data/achievements";
-import { GraduationCap, MapPin, Calendar } from "lucide-react";
+import { experienceData } from "@/data/experience";
+import { Building2, MapPin, Calendar } from "lucide-react";
 import { ScrollReveal, GradientText } from "@/components/animations";
 
 export function About() {
+  const currentExperience = experienceData[0];
+
   return (
     <section className="py-20 px-4">
       <div className="container mx-auto max-w-6xl">
-        {/* Section Header */}
         <ScrollReveal delay={0.1}>
           <motion.div
             initial="hidden"
@@ -23,14 +24,13 @@ export function About() {
               About <GradientText>Me</GradientText>
             </h2>
             <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-              Passionate about building innovative solutions at the intersection
-              of cloud computing, full-stack development, and emerging
-              technologies.
+              Software developer focused on building reliable backend systems,
+              real-time products, and AI-powered applications with measurable
+              impact.
             </p>
           </motion.div>
         </ScrollReveal>
 
-        {/* Intro + Education */}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -40,37 +40,35 @@ export function About() {
           className="mb-16"
         >
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            {/* LEFT — About Text */}
             <div className="space-y-6 text-lg leading-relaxed">
               <p>
-                Hi! I&apos;m Manmeet Singh, currently pursuing my B.Tech in
-                Computer Science Engineering at Lloyd Institute of Engineering
-                and Technology, Delhi. With a strong interest in technology,
-                community building, and full-stack development, I love creating
-                impactful solutions and digital experiences that make a real
-                difference.
+                I&apos;m Manmeet Singh, a software developer with 2+ years of
+                experience building scalable, distributed, and real-time
+                systems. I primarily work with Node.js, TypeScript, SQL, and
+                AWS, and I enjoy turning complex product ideas into reliable
+                backend services, clean APIs, and smooth user experiences.
               </p>
 
               <p>
-                I completed an App Designing Internship at MakeIntern, where I
-                designed their website UI, focusing on user experience, layout
-                structuring, and visual consistency. This experience
-                strengthened my design thinking and practical implementation
-                skills. I&apos;m passionate about leveraging technology and
-                design to solve real-world problems.
+                My work has covered payment and wallet systems, live
+                consultation platforms, video delivery pipelines, hotel
+                operations software, and AI-assisted products. I care deeply
+                about performance, concurrency control, and maintainable system
+                design, especially in products where reliability directly
+                affects users and business outcomes.
               </p>
 
               <p>
-                As the Co-founder of Coders Circle, a tech community with 1500+
-                developers and students, I&apos;ve been building a strong coding
-                culture through events, mentorship, and collaborative learning,
-                helping students grow individually and as a community.
+                I&apos;m especially interested in backend engineering, AI
+                integration, and production architecture. Whether I&apos;m
+                building a transaction-safe billing flow, a low-latency
+                communication system, or a data pipeline for intelligent
+                workflows, I aim to build software that is technically strong,
+                practical, and genuinely useful.
               </p>
             </div>
 
-            {/* RIGHT — FLOATING PHOTO + CARD */}
             <div className="relative flex flex-col items-center">
-              {/* FLOATING IMAGE */}
               <div className="absolute -top-24">
                 <div className="relative w-75 h-75 rounded-full p-[4px] bg-gradient-to-br from-primary via-purple-500 to-blue-500 shadow-2xl">
                   <div className="rounded-full overflow-hidden w-full h-full">
@@ -82,45 +80,49 @@ export function About() {
                   </div>
                 </div>
               </div>
+
               <br />
               <br />
               <br />
 
-              {/* EDUCATION CARD — moved down for spacing */}
               <div className="pt-40 w-full space-y-4">
-                {educationData.map((edu, index) => (
-                  <motion.div
-                    key={edu.id}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                    variants={ANIMATION_VARIANTS.fadeUp}
-                    transition={{ delay: index * 0.1 }}
-                    className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow"
-                  >
-                    <div className="flex items-start space-x-4">
-                      <div className="p-3 rounded-full bg-primary/10 text-primary">
-                        <GraduationCap className="h-6 w-6" />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-semibold text-lg">{edu.degree}</h3>
-                        <p className="text-primary font-medium">
-                          {edu.institution}
-                        </p>
-                        <div className="flex flex-wrap gap-4 mt-2 text-sm text-muted-foreground">
-                          <span className="flex items-center gap-1">
-                            <Calendar className="h-3 w-3" />
-                            {edu.duration}
-                          </span>
-                          <span className="flex items-center gap-1">
-                            <MapPin className="h-3 w-3" />
-                            {edu.location}
-                          </span>
-                        </div>
-                      </div>
+                <motion.div
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={ANIMATION_VARIANTS.fadeUp}
+                  className="p-6 rounded-lg border bg-card hover:shadow-lg transition-shadow"
+                >
+                  <div className="flex items-start space-x-4">
+                    <div className="p-3 rounded-full bg-primary/10 text-primary">
+                      <Building2 className="h-6 w-6" />
                     </div>
-                  </motion.div>
-                ))}
+                    <div className="flex-1">
+                      <p className="text-xs uppercase tracking-[0.2em] text-muted-foreground mb-2">
+                        Current Role
+                      </p>
+                      <h3 className="font-semibold text-lg">
+                        {currentExperience.role}
+                      </h3>
+                      <p className="text-primary font-medium">
+                        {currentExperience.company}
+                      </p>
+                      <div className="flex flex-wrap gap-4 mt-2 text-sm text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-3 w-3" />
+                          {currentExperience.duration}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <MapPin className="h-3 w-3" />
+                          {currentExperience.location}
+                        </span>
+                      </div>
+                      <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                        {currentExperience.description}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
               </div>
             </div>
           </div>

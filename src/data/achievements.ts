@@ -37,11 +37,11 @@ export interface Education {
 
 export const educationData: Education[] = [
   {
-    id: "lloyd",
-    institution: "Lloyd Institute of Engineering and Technology",
-    degree: "B.Tech in Computer Science Engineering",
-    duration: "2024 - 2028",
-    location: "Delhi, India",
+    id: "ct-university",
+    institution: "CT University",
+    degree: "B.Tech in Computer Science and Engineering",
+    duration: "Aug 2020 - Jun 2024",
+    location: "Ludhiana, Punjab, India",
    
   }
 ];

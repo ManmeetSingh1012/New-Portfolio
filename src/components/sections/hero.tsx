@@ -63,8 +63,8 @@ export function Hero() {
             <span className="block mt-2">
               <Typewriter
                 words={[
-                  "Frontend Developer",
-                  "Cyber security enthusiast",
+                  "Software Developer",
+                  "Full Stack AI Developer",
                   "Problem Solver",
                   "Tech Innovator",
                 ]}
